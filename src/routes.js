@@ -14,12 +14,12 @@ const routes = [
     name: 'Home',
     exact: true,
   },
-  // {
-  //   path: '/about',
-  //   component: About,
-  //   name: 'About',
-  //   exact: true,
-  // },
+  {
+    path: '/about',
+    component: About,
+    name: 'About',
+    exact: true,
+  },
   // {
   //   path: '/users',
   //   component: Users,

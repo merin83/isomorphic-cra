@@ -8,7 +8,6 @@ import * as serviceWorker from './serviceWorker';
 import routes from './routes';
 
 const data = window.__INITIAL_DATA__;
-console.log(data, 'data how');
 ReactDOM.hydrate(
   <BrowserRouter>
     <App routes={routes} initialData={data} />
@@ -19,4 +18,4 @@ ReactDOM.hydrate(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();

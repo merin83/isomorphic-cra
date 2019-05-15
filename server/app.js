@@ -30,8 +30,8 @@ function handleUniversalRender(req, res) {
   const context = {};
   return getInitialData(req, res, routes)
     .then(data => {
-      console.log(data, 'any data?');
       serverData = data;
+      // need to distribute data from here
       const app = (
         <StaticRouter location={req.url} context={context}>
           <AppClass routes={routes} initialData={data} />
